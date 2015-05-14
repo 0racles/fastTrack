@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+          width : 60%;
+          margin : auto;
+      }
+      </style>
+    </head>
+    <body>
+       <div class="container">
+         <h1>Hello <mark style="background-color : blue;">World</mark><small>This is a lighter secondary text</small></h1><!--Note you can apply the css styling to change the default backgmround color for the <mark> tag. I just changed it to blue here-->
+         <p>I am the first person to say that <abbr title = "Michael Jackson">MJ</abbr> is the best performer in the hismtory of music</p> <!--The abbreviation tag provides a tag for its text node with the pre-defined title-->
+         <p>This is one of Bro Dare's favourite sayings:</p>
+         <blockquote class = "blockquote-reverse">
+         	<p>Dont let anyone's wrong change your right</p>
+         	<footer>Bro Dare</footer>
+         </blockquote><!--remember that the <footer> element must be nested inside <blockquote> for it to work-->
+         <dl>
+         	<dt>Coffee</dt>
+         	<dd>1. sugar and milk</dd>
+         	<dt>Coke</dt>
+         	<dd>2. Cola and sacharin<dd>
+         </dl>
+         <p>There are three things that are very imoportant in this day nage: they are <code>love, peace, and happiness</code></p>
+         <p>This is how the keyboard inputs work, ifyou wanna highlight a keyboard ctrl command you should do <kbd>ctrl + s </kbd>   to save the document.</p> 
+         <pre>Text in the pre tag have a fixed-width font. One os the main work of the pre tag is to preserve both the space          and 
+            line break of the document. 
+        <p class="pre-scrollable" style="font-size : 16px;">Just to checking to see if the text in the p tag with a custom font-size will change while in the pre tag</p>
+
+        Even aftert the other names have been mentioned that all of us have copme to realise that we are going to guve one another the toughest time to make us come to the realizayion that anything is actually possible if we put our heart to it, min the best possble way for the best possible reasons.
+    </pre>
+    <h4>The following are examples of the contextual color claasses:</h4>
+    <p class="text-muted">This is how    'text-muted' will  look like</p>
+    <p class="text-primary">This is how 'text-primary will look like</p>
+    <p class="text-success">This is how 'text-success' looks like</p>
+    <p class="text-info">This is how 'text-info' looks like</p>
+    <p class="text-warning">This is how 'test-warning' looks like</p>
+    <p class="text-danger">This is how 'test-danger' looks like</p>
+    <h4>The following are examples of contextual background classes:</h4>
+    <p class="bg-primary">This how bg-primary loooks like</p><!--i noticed thatyou cant have the text and bg classes in the ssame tag like that-->
+    <p class="bg-success">This is how 'bg-sucess' looks like</p>
+    <p class="bg-info">This is how 'bg-info' looks like</p>
+    <p class="bg-warning">This is how 'bg-warning' looks like</p>
+    <p class="bg-danger">This is how 'bg-danger' looks likes</p>
+
+    	 <div class="row">
+         <div class="col-sm-11" style="background-color : lavenderblush">.col-sm-8</div>
+         <div class = "col-sm-1" style="background-color : lavender">col-sm-12</div>
+	    </div>
+	  </div>
+      <h3>Bootstrap Table</h3><!--When using the table element in Bootstrap, you dont need to style tne table like you do in the normal css. All you need to do is to apply the pre-styled classes in compounding fashion in the tags. The .table class provides the horizontal dividers, .table-bordered provides the borders for rows and columns etc. But some classes dont override others ie applying the bg-contextual/typographical classes to the rows will color them if the table doesn't have the class .table-striped--> 
+      <p>A bootssstrap table only has horizontal dividers</p>
+      <div class="container">
+      <table class="table table-bordered table-condensed table-responsive table-hover">
+          <thead>
+              <th>First Names</th>
+              <th>Last Names</th>
+              <th>Middle Names</th>
+          </thead>
+          <tbody>
+          <tr class="bg-info">
+              <td>Dare</td>
+              <td>Longe</td>
+              <td>Folaju</td>
+          </tr>
+          <tr class="bg-primary">
+              <td>Ejemen</td>
+              <td>Igbede</td>
+              <td>Clara</td>
+          </tr>
+          <tr class="bg-success">
+              <td>Christina</td>
+              <td>Redondo</td>
+              <td>Vicktoria</td>
+          </tr>
+          </tbody>
+      </table>  
+      </div>
+      <h3>Bootstrap Images</h3>
+      <div class="container-fluid">
+         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTREN_kmIzqqiM1XFSdPumOo_8faEPFGnvuabpkgg31NzAaqF7c" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTREN_kmIzqqiM1XFSdPumOo_8faEPFGnvuabpkgg31NzAaqF7c" class="img-circle" alt="Cinque Terre" width="304" height="236">
+         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTREN_kmIzqqiM1XFSdPumOo_8faEPFGnvuabpkgg31NzAaqF7c" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+      </div>
+      <div class="container">
+         <h3>Bootstrap Videos</h3>
+         <div class="embed-responsive embed-responsive-16by9"  width="100px" height="80px">
+            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+         </div>
+      </div>
+      <div class="container">
+        <h3 class="page-header">Jumbotron</h3><!--This creates a simple divider line betweenn the page header and the contents of the page-->
+        <div class="jumbotron">
+            <h3>Jumbotron</h3>
+            <p>The jumbotron is a big box for calling special attention to some special content or information. The default colour of a jumbotron is grey and its corners are rounded. It also enlarges the font of the text inside it. Placing the Jumbotron outside the container makes it extend to the edges of the page</p>    
+        </div>
+      </div>
+      <div class="container-fluid">
+         <h3>Well</h3>
+         <p>The .well class wraps a particular element in a much smaller (special) box than the Jumbotron and gives it padding. It also has rounded border like the Jumbotron and has a default color of grey. They could also come in different padding marginsamd thus classified into 3 types as shown below:. Note that the default well is the meedium size (that  is the forst one)</p>
+         <div class="well">Normal well</div>
+         <div class="well well-sm"> Smaill well</div>
+         <div class="well well-lg">Large well</div>
+      </div>
+      <div class="container">
+        <h3>Alerts</h3>
+        <div class="alert alert-success fade in">
+            <strong>Success! </strong>The success alert indicates that your action was succesful. Its green.
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+        <div class="alert alert-info fade in">
+            <strong>Info! </strong>The Info alert displays information change or action change. Its blue
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+        <div class="alert alert-warning fade in">
+            <strong>Warning! </strong>Indicates warning that might need attention. Its yellow.
+            <a href="#" class="close" data-dismiss="alert"aria-label="close">&times;</a>
+        </div>
+        <div class="alert alert-danger fade in">
+            <strong>Danger! </strong>Indicates dangerous and harmful actions. this is pink
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+      </div>      
+      <div class="container-fluid">
+        <h3>Buttons</h3>
+        <p>Below are the respective buttons styles available in Bootstraps</p>
+        <button class="default">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Sucess</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-link">Link</button>
+        <h6>Types of buttons that can exist</h6>
+        <a href="#" type="button" class="btn btn-info btn-md">a href button</a>
+        <input type="button" class="btn btn-success btn-lg" value="Input Button">
+        <button type="button" class="btn btn-warning btn-sm">Button Type</button>
+        <input type="submit" value="Input Submit" class="btn btn-danger btn-xs"><br>
+        <h6>A block button spans the whole width of the parent element. It's really easy to create one, jsut add the class .btn-block and you'll have one like this;</h6> 
+        <a href="#" type="button" class="btn btn-default btn-block active">Block Button</a><!--The .active class makes the button appear like it was pressed-->
+        <input type="submit" value="Another Block Button" class="btn btn-primary btn-block disabled"><!--the .disabled class makes it unclickable--><br>
+    </div>
+        <h6>Grouping Buttons</h6>
+        <div class="btn-group-vertical"><!--Bootstrap allows you group a series of buttons in a single line,thus:-->
+            <button class="btn btn-primary">button</button>
+            <button class="btn btn-primary">a href</button>
+            <button class="btn btn-primary">button</button>
+            <p>The button group classes .disabled and .active did not work when i applied them to the class .btn btn-group btn-lg but on the .btn-group-vertical worked</p>
+        </div>
+        <div class="container">
+            <h6 class="page-header">Nesting Button Groups and Dropdpwn menus</h6>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg">Three</button>
+                <input type="submit" class="btn btn-danger btn-lg" value="Vodafone">
+                <div class="btn-group">
+                   <a href="#" type="submit" class="btn btn-warning btn-lg dropdown-toggle" data-toggle="dropdown">O2<span class="caret"></span></a>
+                   <ul class="dropdown-menu" role="menu">
+                       <li><a href="#">Samsung Galaxy</a></li>
+                       <li><a href="#">Iplhone 6</a></li>
+                   </ul>
+                </div>        
+        </div>
+        <div class="container">
+            <h3 class="page-header">Gylphicons</h3>
+            <p>Bootraps provides 200 glyphicons from the Glyphicons halfing sets. These are little miniatuer art renderings that can be used in text, buttons, toolbars, vavigation, forms etc</p>
+            <span class="glyphicon glyphicon-envelope"></span>
+            <span class="glyphicon glyphicon-pencil"></span>
+            <span class="glyphicon glyphicon-music"></span>
+            <a href="#" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-save"></span> save</a>
+            <button class="btn btn-default"><span class="glyphicon glyphicon-user"></span> contact</button> 
+            <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign alert-sm"></span> Warning! No Anti-virus currently active</div>
+            <h3>Badges</h3>
+            <p>Badges are numbers indicating items associated with a link or button. You use it with the 'span' element by adding a the class .badge</p>
+            <span class="glyphicon glyphicon-stats"><span class="badge">7</span></span><br>
+            <span class="page-header">Labels</span>
+            <p>Labels are just like badges. They provide additional informtion about something. You create a label by nesting a 'span' tag with the class .label <mark class="bg-info">and followed by any of the contextual classes</mark> in the target element.
+            <br><mark class="text-warning">Note:</mark><br>
+            The labelautomatically adjust itself to its parent element. For instance:</p>
+            <span class="label label-primary">Label Primary</span>
+            <span class="label label-success">Label Success</span>
+            <span class="label label-warning">Label Warning</span>
+            <span class="label label-danger">Label Danger</span>
+            <h2>Labels<span class="label label-default">New</span></h2>
+        </div>
+        <div class="container-fluid">
+        <h3>Basic Dropdown</h3>
+        <p>This is the basic dropdown method in Bootstap. You can make a dropdown using the 'button' and 'a' elements by first adding a .dropdown-toggle and data-toggle="dropdown" lass and attribute but first you have to make a div and give it a class .dropdown. by aadding other classes like .divider and .dropdown-header, .disabled etc, you can continously style the dropdown menu. Always try and include the'role' and 'aria' label for the visually impaired when they use screen-readers</p>
+          <div class="dropup">
+            <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
+                <li class="dropdown-header" role="presentation">Programming Languages</li>
+                <li role="presentation"><a href="#" role="menuitem">HTML</a></li>
+                <li class="divider" role="presentation"></li>
+                <li class="disabled" role="presentation"><a href="#" role="menuitem">CSS</a></li>
+                <li class="divider" role="presentation"></li>
+                <li role="presentation"><a href="#" role="menuitem">JAVA</a></li>
+            </ul>
+          </div>  
+        </div>
+        <div class="container-fluid">
+            <h3 class="page-header">JS Modal</h3>
+            <p>The defalut size of modals is medium, but you can change the size mby adding the .modal-sm or .modal- lg class. When you use the 'a href' element as a button to trigger the modal youdont have to use the 'data-toggle' attribute, but you can just use the 'href' link directly like i have done here</p> 
+           
+        <a href="#modal" type="submit" class="btn btn-info btn-lg" data-toggle="modal"><span class="glyphicon glyphicon-fullscreen"></span> Open</a>
+        <div class="modal" id="modal" role="dialog"> <!--iadded the 'role' atrribute for screen readers-->
+             <div class="modal-dialog modal-sm"><!--the .modal-dialog class indicates thatit is a dialog and then gives it the dwfault size of a dialog bnox -->               
+                <div class="modal-content">
+                    <div class="modal-header"><a href="#" data-dismiss="modal" role="modal-close" class="close">&times;</a>
+                    <h4 class="modal-title">Demo Of Modals</h4>
+                </div>  
+                <div class="modal-body">
+                    <p>This is the body of the modal</p>
+                </div>
+                <div class="modal-footer"><span type="button" class="btn btn-default" data-dismiss="modal">close</span>
+                </div>
+              </div>
+            </div>  
+        </div>
+        <div class="container">
+            <h3>Basic Progress Bar</h3>
+            <p>If you want the progress bar to display a label, dont add the '.sr-only' classfrom the span tag. You can add  different contextual classes just add the class of .success, .info, .warning, .danger to the '.progress-bar'. The default contextual classis primary and you can use it with 'span' and theh label will still be aligned at the center. If you try to use the span with other contextual classes the label will not be aligned.Inorder for the to be aligned, use it without 'span'. Tostack progress bars, taht is to place them side by side, just place them all inside the parednt 'div' with the class .progress</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70% Complete
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:80%" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">80% Complete
+                </div>  
+            </div> 
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin= "0" aria-valuemax="100" style="width:20%">20% Complete
+                </div>
+            </div>     
+        </div>
+        <div class="container-fluid">
+            <h3>Pagination</h3>
+            <p>The .active and .disabled class are added to the 'li' elements why the .pagination-sm and .pagination-lg are added to the parent 'ul'. the default pagination size is .pagination-sm, there is no md or xs pagination sizes</p>
+            <ul class="pagination pagination-lg">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <h3>Pager</h3>
+            <p>A pager is a type of paginationjudt that it provides just the 'previous' and next 'button'. Also using the .previous class sets the button to the left and adding the .next class sets the button to the right</p>
+            <ul class="pager">
+                <li><a href="#">previous</a></li>
+                <li><a href="#">next</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3>Basic List Groups</h3>
+            <p>To create a basic list group just had the class .list-group to the 'ul' element and the class .list-group-item to the 'li' element. You can also include the differrnt contextual classes into list</p>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-info">Chelsea</li>
+                <li class="list-group-item list-group-item-danger">Manchester United</li>
+                <li class="list-group-item list-group-item-warning">Arsenal</li>
+            </ul> 
+            <p>If you add badges to the list group it automatically aligns to the right.You can also add badges to the list thus:
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item">Michael Jackson<span class="badge">10</span></li>
+                <li class="list-group-item">Whitney Houston<span class="badge">5</span></li> 
+                <li class="list-group-item">Jackie Chan<span class="badge">3</span></li>
+            </ul>
+            <ul class="list-group">
+                <a href="#" class="list-group-item active">Witches Of East End</a>
+                <a href="#" class="list-group-item disabled">Slpartacus</a>
+                <a href="#" class="list-group-item">Games Of Thrones</a>
+            </ul>
+            <p>You can also use the 'div' element while nesting a whole ransge of other html elements in it. I went ahead to include the 'blockquote'in it and added its class .blockquote-reverse to align it at the right</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-header">Picadilly Circus</h4>
+                    <p class="list-group-item-text"><blockquote class="blockquote-reverse">This is where you find the statue of Eros<footer>Harry Croydon 2014</footer></blockquote></p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-header">Oxford Circus</h4>
+                    <p class="list-group-item-text">This is were you find stores like Priamrk, H&M, Zara and a host of others</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-header">Leicester Square</h4>
+                    <p class="list-group-item-text">This is where you find the empire casino and cinema's and a host of many other fun places</p>
+                </a>
+            </div>   
+        </div>
+        <div class="container-fluid">
+        <h3>Panels</h3>
+        <div class="panel panel-default">
+            <div class="panel-body">The body of the panel gets the .panel-body class just as the parent 'div' gets the .panel class and the contextual styling</div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">This 'div' has a class of .panel-heading</div>
+            <div class="panel-body">This 'div' has a .panel-body class</div>
+            <div class="panel-footer">This is the footer of the panel with a class .panel-footer</div><br>
+        </div><br>\
+
+        <small>Now i will make a group panel</small>
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">This is the first head with the class of .panel-header</div>
+                <div class="panel-body">This is the first body with the class of .panel-body</div>
+            </div>
+            <div class="panel panel-warning">
+                <div class="panel-heading">This is the second header and it still has the class of .panel-header</div>
+                <div class="panel-body">This is the second body and it still has a class of .body-panel</div>
+            </div>
+            <div class="panel panel-success">  
+                <div class="panel-heading">This is the third header and it yet has a class of .panel-header</div>
+                <div class="panel-body">This is my third body and it yet has a class of .panel-body</div> 
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading">This is the fourth header</div>
+                <div class="panel-body">This is the fourth body</div>
+            </div>
+        </div>
+       </div>
+       <div class="container">
+          <h3 class="page-header">Composing a DropDown Menu</h3>
+          <div class="dropdown">
+             <button class="btn btn-primary dropdown-toggle" type="button" aria-labelby="menu" data-toggle="dropdown"><span class="caret"></span>Dropdown Menu</button>
+             <ul class="dropdown-menu dropdown-menu-right" role="dropdown-menu">
+             <li><a href="#">My First Item</a></li>
+             <li><a href="#">My Second Item</a></li>
+             <li><a href="#">My Third Item</a></li>
+             </ul>
+          </div>
+          <code>This is my self-constructed example of the dropdown menu</code>
+          <div class="dropdown">
+             <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret" id="menu1"></span> My Custom Menu</button>
+             <ul class="dropdown-menu dropdown-menu-right" aria-labelby="menu1" role="menu">
+                <li class="dropdown-menu-header"><a href="#">Libraries in Central London</a></li>
+                <li class="divider"></li>
+                <li class="active active-default" role="presentation"><a href="#" role="menuitem">High Street Kensington</a></li>
+                <li class="divivder"></li>
+                <li class="disabled" role="presentation"><a href="#" role="menuitem">Paddington Library</a></li>
+                <li class="divivder"></li>
+                <li role="presentation"><a href="#" role="menuitem">V & A Library</a></li>
+                <li class="divider"></li>
+                <li role="presentation"><a href="#" role="menuitem">British Library</a></li>
+             </ul>
+          </div> 
+        </div>
+        <div class="container-fluid">
+            <h3>Menu</h3>
+            <ul class="nav nav-tabs">
+                <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Burger King <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-header">Latte</li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SubWay <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-header"><a href="#">Chocolate Chip Cookies</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Ham Burger</a></li>
+                        <li class=divider></li>
+                        <li><a href="#">Cocacola</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">McDonalds<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-header"><a href="#">Fries</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Burgers</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Hot Chocolate</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Vanilla Milk Shake</a></li>
+                    </ul>     
+                </li>
+                <li><a href="#">Item 4</a></li>
+            </ul><br>
+        
+            <code>Above i created a drpodown menu using Tabs. Now i will go ahead and create a menu using PILLS </code> 
+            <ul class="nav nav-pills nav-justfied"><!--If you wanna form vertical pills jsut add the .nav-stacked  class to this class. If you want the menu to be centered just add the .nav-justified class to it-->
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tupac <span class="caret"></span></a><!--will go ahead and add a sub-menu list to individual menu items-->
+                    <ul class="dropdown-menu">
+                        <li class="ac"><a hef="#">Jesus</a></li>
+                        <li><a href="#">Mohammed</a></li>
+                        <li><a herf="#">Budha</a></li>
+                    </ul> 
+                </li>
+                <li><a href="#">Puffy</a></li>
+                <li><a href="#">Big Poppa</a></li>
+            </ul><br>
+            <pre>The following is a dynamic tab</pre>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#tab1" data-toggle="tab">Page 1</a></li>
+                <li><a href="#tab2" data-toggle="tab">Page 2</a></li>
+                <li><a href="#tab3" data-toggle="tab">Page 3</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-panel fade in active" id ="tab1">
+                    <h3>Page 1</h3>
+                    <p>This is the home of this App. How is it going</p>
+                </div>
+                <div class="tab-panel fade" id="tab2">
+                    <h3>Page 2</h3>
+                    <p>Do you need information about our services. Just call us on the following numbers</p> 
+                </div>
+                <div class="tab-panel fade" id="tab3">
+                    <h3>Page 3</h3>
+                    <p>Please look closer at the previous tab to get information about us</p>
+                </div>
+            </div>
+            <!--Note that this same codde apoolies to pills just changebtjhe class name to .nav-pills-->
+        </div>   
+            <h3>Navigation Bar</h3>
+            <p>We know that a menu is also a navigation tool. But the real difference between a menu and a navigation bar is that the Navigation bar is normally placed at head of the page. Another diffrence is that the navigation bar also uses the tag 'nav'. Fo more on navbar see the nav.html file</p>
+            <div class="container">
+                <h3>Bootstrap Forms</h3>
+                <p>If you want all the form elements to be arranged side by side add the class.form-inline to the form element<br>If you dont incude an .sr-only class in the label 'tag' screen-readers will have a problem but you dont have to include in checkbox</p>
+                <form class="form-vertical" role="form">
+                  <fieldset disabled><!--the fieldset is used to group a number of input element and then you can disable or manipulate them--> 
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" placeholder="a vertical form">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="a vertical form">
+                    </div> 
+                    <div class="radio">
+                        <label><input type="radio">Remember Me</label>
+                    </div>
+                  </fieldset>  
+                        <button type="submit" class="btn btn-success">Submit</button> 
+                </form>
+                <form class="form-inline" role="form">
+                   <div class="form-group">
+                       <label for="email">Email</label>
+                           <input type="email" id="email" class="form-control" placeholder="inline form" disabled><!--to disable add the input control attribute 'disabled' to the input element--> 
+                   </div>
+                   <div class="form-group">
+                       <label for="password">Enter</label>
+                       <input class="form-control input-lg" type="password" placeholder="inline form"><!--you can set the heights of the input elements usig classes like .input-lg, .input-sm etc. The default height is .input-md-->
+                   </div>
+                   <div class="checkbox">
+                       <label><input type="checkbox">Remember Me</label>
+                   </div>  
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <p>Ifyou resize the window you willl see that the inoputs field will no longer be inline but they will be stacked instead. This is because the minimum size for inline form is 768px</p>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" placeholder="this is an horizontal form" class="form-control" readonly><!--the readonly is added here. it disabled the email input element only in a way that tou cant enter text but it can still focus--> 
+                        </div> 
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email eg">Email Example:</label>
+                        <p class="form-control-static">eg 4ola4get@gmail.com</p><!--to insert plain text next toa form label within a horizontal form use the .form-control-static class on a 'p'-->   
+                    </div>
+                    <div class="form-group has-error"><!--the .has-error class gives it a red focus-->
+                       <label class="control-label col-sm-2" for="password">Password</label>
+                       <div class="col-sm-10">
+                           <input type="password" class="form-control" placeholder="this is an horizontal form">
+                        </div>
+                   </div>
+                   <div class="form-group has-warning">
+                      <!--This will give the border-color of the elemnet a .has-warnig colo<-->
+                       <label class="control-label col-sm-2" for="postcode">PostCode</label>
+                       <div class="col-sm-10">
+                           <input type="postcode" placeholder="this is the horizontal form" class="form-control">
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <div class="col-sm-offset-2 col-sm-10">
+                           <div class="checkbox">
+                               <label class="control-label"><input type="checkbox">Remember Me</label>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-default">Submit</button>
+                      </div>
+                   </div>
+                </form>
+            </div>
+            <div class="container">
+                <h3>Forms (Inputs)</h3>
+                <p>Bootrap supports all forms of inputs like text, date, url, colors, password, emails, datetime, datetime-local, month, time, week, number,search, and telephone. If input type isnt accurately specifed it will not be fully styled</p>
+                <form class="form-vertical" role="form">
+                     <div class="form-group">
+                         <label for="test">Input</label>
+                         <input type="search" class="form-control">
+                     </div> 
+                     <button type="submit" class="btn btn-warning">Check</button>
+                     <div class="form-group has-warning has-feedback">
+                         <label for="comment">Comment</label>
+                         <textarea class="form-control" rows="2"></textarea><span class="glyphicon glyphicon-unchecked form-control-feedback"></span><!--The parent 'div' gets the classes .has-waring and .has-feedback. then we add .gyphicon to a span element to create the icon. the element will have the respective other classes as shown previously-->
+                     </div>
+                </form>
+                <form role="form">
+                    <div class="checkbox">
+                        <label for="checkbox"><input type="checkbox">CheckBox 1</label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="add the class .checkbox-inline to the all 3 labels tag to make them fall inine"><input type="checkbox">CheckBox 2</label>
+                    </div>
+                    <div class="checkbox" disabled><!--do not add this 'divs' if you want to make allchechbox inline. Insteaad include the class .checkbox-inline in their labels--> 
+                        <label for="checkbox"><input type="checkbox">Disabled Checkbox</label>
+                    </div>
+                </form>
+                <form role="form">
+                        <label class="radio-inline" for="radio"><input type="radio">radio Inline</label>
+                        <label class="radio-inline" for="radio"><input type="radio">Radio inline</label>
+                        <label class="radio-inline disabled" for="radio"><input type="radio">inline radio</label>
+                </form>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="select">Select (you can choose only one option)</label>
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select> 
+                    </div>
+                </form>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="select">Multiple Select (hold down 'shift' to select more that one option)</label>
+                        <select multiple class="form-control"><!--make sure this 'multiple' keyword is added here tomake sure this works-->
+                            <option>one</option>
+                            <option>Two</option>
+                            <option>Three</option>
+                            <option>Four</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="container-fluid">
+                <h3>Carousel</h3>
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                   <ol class="carousel-indicators">
+                      <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#mycarousel" data-slide-to="1"></li>
+                      <li data-target="#mycarousel" data-slide-to="2"></li>
+                      <li data-target="#mycarousel" data-slide-to="3"></li>
+                   </ol>
+                   <div class="carousel-inner" role="listbox">
+                       <div class="item">
+                           <div class="carousel-caption">Roger Federer
+                              <h4>How Carousels work (1st step)</h4>
+                              <p>First you wrap the whole Carousel in a div. Give it an 'ID' a 'class' and a data-ride attribute. The data-ride attr will trigger the animation effect class (eg .slide) of the carousel immediately the page loads </p>
+                           </div>
+                           <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8PxIa8zYAkYgxVa4t8SVB466RQ1aAvYLJ0DXPYYhE021m8EDB">
+                       </div>
+                       <div class="item active">
+                          <div class="carousel-caption">Rafael Nadal
+                             <h4>How Carousels Work (2nd step)</h4>
+                             <p>create a set of indicators to show the positon of the active image. Use an 'OL'and give it a class .carousel-indicator.In the LI tags add a data-target atrr to point to  the ID of the carousel. Then also include a data-slide-to attr setting them to each number of image</p>
+                          </div>
+                          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJJi5FIIINQdRU0Ofp_RJUC_6lKOMWM0O4MCMUNu5Jf6bGGwYy">
+                       </div>
+                       <div class="item">
+                          <div class="carousel-caption">Novak Djokovic
+                              <h4>Hoe Carousels Work (3rd Step)</h4>
+                              <p>Then create a div with the class .carousel-inner and then nest all the immages or text in (sub) divs all with a .item class. If you want to label them simply add the .carousel-caption class to a new div just as we are doing now </p>
+                          </div>
+                          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5HbguKOYWMI2WIkEJclsB3vQOzmRdPaGl0Mxu-Jou-tdYTOLI1Q">
+                       </div>
+                       <div class="item">
+                          <div class="carousel-caption">Andy Murray</div>
+                          <div class="carousel-caption">
+                              <h4>How Carousels Work (4th Step)</h4>
+                              <p>Now create arrows to slide the carousel. in an 'a' for the left arrow link it to the carousel ID, then give it a data-slide attr with the value 'prev'. Do not forget to add a class of left carousel-sslide to it. Then put a span tag with a class of .glyphicon glyphicon-chevron-left and you can also include a span for screen readers. Repeat the same for the right arrow onnly changing the text from left to right where necessary</p>
+                          </div>
+                          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXgCjyu5-nuhho3i1fXVrr-7FuBZcGa3_CU_KKWcb2yrGLlpY3zw">
+                       </div>
+                   </div>
+                   <a href="#mycarousel" class="left carousel-control" data-slide="prev">
+                       <span class="glyphicon glyphicon-chevron-left" role="button"></span>
+                        <span class="sr-only">Previous</span>
+                   </a>
+                   <a href="#mycarousel" class="right carousel-control" data-slide="next" role="button">
+                       <span class="glyphicon glyphicon-chevron-right"></span>
+                       <span class="sr-only">Next</span>
+                   </a> 
+                </div>
+            </div> 
+            <div class="container-fluid">
+               <h3>Tooltip</h3>
+               <p>The tooltip plug-in is asmall pop-up box that appears when the user moves the mouse pointer over the element. You can add a tootip to any element, heres how: <br>NOTE : You must firt initialise tooltip with jquery befire using it. See scripttag below.</p>
+               <p data-toggle="tooltip" title="empty">Read My Mind<br>Theh data-placement attr positions the tooltip</p>
+               <kbd data-toggle="tooltip" title="print" data-placememt="left">ctrl p</kbd>
+            </div>
+            <div class="container">
+               <h3>Popover</h3>
+               <p>The Popover box is similar too the tooltip just that it contains more content than the tooltip. Hover over the box to learn more</p>
+               <a href="#" data-toggle="popover" title="the header" data-content="the popover box can have uses the title attr as his header and a data-content attr for its body. You can also set the position its posiiton by using the data-placement attr. If you dont want to click to trigger the popover, you can set the data-trigger attr tom hover. Remember just like tooltip, you will have to call the popover method with jquery for it to work--> data-placement="right" data-trigger="hover">Dec 1st</a>
+            </div>
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+          $('[data-toggle="popover"]').popover();
+          });
+    </script>  
+	</body>
+</html>
